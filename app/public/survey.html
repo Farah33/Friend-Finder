@@ -180,7 +180,7 @@
                     </div>
                     <div class="modal-body">
                         <h2 id="matchName"></h2>
-                        <img id="matchImg" src="file:///Users/lisavanorden/Documents/RCB_files/week13_files/wk13_hw/friendfinder/assets/images/floya_avatar_pic.jpg" alt="">
+                        <img id="matchImg" src="https://www.consumer.ftc.gov/sites/www.consumer.ftc.gov/files/games/off-site/game-0003_friend-finder_60x360.png" alt="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -232,12 +232,25 @@
                     var userData = {
                             name: $("#name").val(),
                             photo: $("#photo").val(),
-                            scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
+                            scores: [
+                                $("#q1").val(),
+                                $("#q2").val(),
+                                $("#q3").val(),
+                                $("#q4").val(),
+                                $("#q5").val(),
+                                $("#q6").val(),
+                                $("#q7").val(),
+                                $("#q8").val(),
+                                $("#q9").val(),
+                                $("#q10").val(),
+                            ]
                         }
                         // Grab the URL of the website
                     var currentURL = window.location.origin;
+
                     // AJAX post the data to the friends API. 
                     $.post(currentURL + "/api/friends", userData, function(data) {
+
                         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
                         $("#matchName").text(data.name);
                         $('#matchImg').attr("src", data.photo);

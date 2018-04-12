@@ -1,4 +1,4 @@
-module.exports = [{
+var friends = [{
 
         "name": "Zain Asher",
         "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8isEzotAox9c0gqusg39KvtGFXElAKfYYHmtDwuPCyeW3Tb03",
@@ -186,4 +186,4 @@ module.exports = [{
 
 
 
-//export to the server
+module.exports = friends;
