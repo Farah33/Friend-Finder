@@ -1,0 +1,24 @@
+{
+  "name": "hw11friendfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farah33/HW11FriendFinder.git"
+  },
+  "author": "khadija",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Farah33/HW11FriendFinder/issues"
+  },
+  "homepage": "https://github.com/Farah33/HW11FriendFinder#readme",
+  "dependencies": {
+    "data": "^0.6.1",
+    "form-data": "^2.3.2"
+  }
+}
