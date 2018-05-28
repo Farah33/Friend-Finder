@@ -19,6 +19,8 @@
   "homepage": "https://github.com/Farah33/HW11FriendFinder#readme",
   "dependencies": {
     "data": "^0.6.1",
-    "form-data": "^2.3.2"
+    "form-data": "^2.3.2",
+    "mpm": "0.0.1",
+    "routing": "0.0.2"
   }
 }
