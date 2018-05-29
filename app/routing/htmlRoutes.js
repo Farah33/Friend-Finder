@@ -18,7 +18,7 @@ module.exports = function(app) {
   });
   // Connect background IMG
   app.get("/imgs/footer_lodyas", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/imgs/footer_lodyas-blue.png"));
+    res.sendFile(path.join(__dirname, "../public/imgs/footer_lodyas-red.png"));
   });
   // If no matching route is found default to home
   app.get("*", function(req, res) {
